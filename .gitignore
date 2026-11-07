@@ -24,6 +24,13 @@
 .DS_Store
 *.pem
 
+# Google OAuth client downloads / local secrets — never commit
+client_secret*.json
+*googleusercontent.com.json
+credentials/
+**/credentials/**
+google-oauth*.json
+
 # debug
 npm-debug.log*
 yarn-debug.log*
@@ -39,3 +46,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+!.env.example
+.data/
+
+# Local working files. Kept on this machine, not part of the shared repository.
+CLAUDE_GRAPH_PROMPT.md
+/docs/
+*.mp4
+*.webm
+*.mov
